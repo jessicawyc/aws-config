@@ -3,6 +3,9 @@ aws config related topics
 improved from https://aws.amazon.com/cn/premiumsupport/knowledge-center/recreate-config-delivery-channel/
 ## 关闭config,恢复到初始状态
 ### 设置region参数
+```
+regions=($(aws ec2 describe-regions --query 'Regions[*].RegionName' --output text))
+```
 
 ### CLI命令
 ```
